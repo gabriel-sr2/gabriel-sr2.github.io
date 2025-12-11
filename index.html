@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="diseñoPrincipal.css">
+</head>
+
+<body>
+
+<!-- BARRA SUPERIOR -->
+<div class="barra-superior">
+    <span class="texto-filtrar">Filtrar</span>
+
+    <button onclick="reiniciarTodo()" class="btn-inicio">Inicio</button>
+
+    <div class="menu-contenedor">
+
+        <!-- BOTÓN CATEGORÍA -->
+        <button class="btnCat">Categoría ▼</button>
+
+        <!-- MENÚ CATEGORÍA -->
+        <div class="menuCat">
+            <a href="#" onclick="filtrarCategoria('juego')">Juego</a>
+            <a href="#" onclick="filtrarCategoria('web')">Web</a>
+        </div>
+
+        <!-- BOTÓN FECHA -->
+        <button class="btnFecha">Fecha ▼</button>
+
+        <!-- MENÚ FECHA -->
+        <div class="menuFecha">
+            <a href="#" onclick="ordenarFecha('nuevo')">Más nuevo</a>
+            <a href="#" onclick="ordenarFecha('viejo')">Más viejo</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- PORTADA PRINCIPAL -->
+<img id="portada-principal" src="portadas/portada inicio.png" class="portada-principal">
+
+<!-- CONTENIDO DE PROYECTOS -->
+<div class="contenedor-proyectos">
+        
+   <!-- EJEMPLO DE PROYECTO -->
+    <div class="proyecto" data-fecha="2025-12-04" data-categoria="juego">
+        <img src="portadas/portada Proyecto 1.png" alt="portada proyecto 1">
+        <div>
+            <h3>White Monsters</h3>
+            <p class="info">Fecha: 04/12/2025 | Categoría: Juego</p>
+            <p>
+                Proyecto final de Programación 1.  
+                Basado en Plants vs Zombies.
+            </p>
+
+            <a href="proyectos/white-monsters-py1/white-monsters.html" target="_blank">
+                <button>Ver Proyecto</button>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="logica.js"></script>
+
+</body>
+</html>
+

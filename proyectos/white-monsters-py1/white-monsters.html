@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Monsters</title>
+    <link rel="stylesheet" href="diseño.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+<!-- BARRA SUPERIOR -->
+<div class="barra-superior">
+    <span class="titulo-barra">White Monsters</span>
+    <button class="boton-inicio" onclick="window.location.href='../../index.html'">Inicio</button>
+</div>
+
+<!-- CONTENEDOR VIDEO + DESCRIPCIÓN CON FONDO -->
+<div class="contenedor-video-descripcion">
+    <!-- VIDEO -->
+    <div class="video-principal">
+        <video controls>
+            <source src="archivos/trailer.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+    <!-- DESCRIPCIÓN DERECHA -->
+    <div class="descripcion-lateral">
+        <h2>Descripción</h2>
+        <p>
+            White Monsters es un juego de defensa en el que debés evitar que los monstruos
+            roben los regalos usando plantas estratégicamente.
+        </p>
+    </div>
+</div>
+
+<!-- BLOQUE: INSTRUCCIONES DEL JUEGO -->
+<div class="bloque-instrucciones">
+    <h2 class="titulo-instrucciones">Instrucciones</h2>
+
+    <div class="fila-instruccion">
+        <!-- Columna de texto -->
+        <div class="columna-texto">
+            <!-- DEFENSA -->
+            <div class="sub-bloque">
+                <h3>Defensa</h3>
+                <p>
+                    Para defender los regalos, colocá las plantas estratégicamente sobre el terreno. 
+                    Cada planta tiene habilidades especiales que ayudan a detener a los monstruos.
+                </p>
+            </div>
+
+            <!-- Ataque Zombie -->
+            <div class="sub-bloque">
+                <h3>Ataque Zombie</h3>
+                <p>
+                   Los Zombie atacan de diferente manera dependiendo su tipo.
+                </p>
+            </div>
+
+            <!-- MOVIMIENTOS -->
+            <div class="sub-bloque">
+                <h3>Movimientos</h3>
+                <p>
+                    Mové las plantas y reaccioná rápidamente a los ataques de los monstruos para mantener 
+                    la defensa activa y eficiente.
+                </p>
+            </div>
+
+            <!-- DERROTA / VICTORIA -->
+            <div class="sub-bloque">
+                <h3>Derrota / Victoria</h3>
+                <p>
+                    Si eliminas 50 zombies Ganas pero si los Zombies llegan a la ultima columna !Game over¡.
+                </p>
+            </div>
+        </div>
+
+        <!-- Columna de sliders -->
+        <div class="columna-sliders">
+            <!-- SLIDER DEFENSA -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/rosa ataque.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/tulipan ataque.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- SLIDER ESTRATEGIA -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/ataque z d.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/ataque zombie m.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- SLIDER MOVIMIENTOS -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/mv1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/mv2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/mv3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/mv4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- SLIDER DERROTA / VICTORIA -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/pierdes.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls>
+                            <source src="archivos/victoria.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EXPLICACIÓN DEL CÓDIGO -->
+<div class="bloque-codigo">
+    
+    <h2>detalles ternicos</h2>
+    <p>
+        El desarrollo del juego se realizó completamente en Java, utilizando sus herramientas y características.
+    </p>
+</div>
+
+<!-- SECCIÓN DESCARGAS -->
+<div class="bloque-descargas">
+    <div class="descargas-titulo">
+        <span>Descargar</span>
+    </div>
+    <div class="descargas-botones">
+        <button class="boton-alfa" onclick="window.location.href='demo.html'">Alfa</button>
+        <button class="boton-docs" onclick="window.location.href='documentacion.html'">Documentación</button>
+    </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="logica.js"></script>
+
+</body>
+</html>
+

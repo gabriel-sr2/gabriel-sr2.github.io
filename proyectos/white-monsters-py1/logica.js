@@ -33,4 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+ 
+
 });
+
+   function descargarJar() {
+    const link = document.createElement('a');
+    link.href = 'juegoZB.jar'; // Ruta al archivo .jar
+    link.download = 'Whilte Monsters';     // Nombre con el que se descargará
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}

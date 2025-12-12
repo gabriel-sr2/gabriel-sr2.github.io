@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function descargarJar() {
     const link = document.createElement('a');
-    link.href = 'juegoZB.jar';      // archivo en la raíz
-    link.download = 'juegoZB.jar';  // nombre con el que se descargará
+    link.href = 'juegoZB.jar';      // desde proyectos/white-monsters-py1/index.html a la raíz
+    link.download = 'White Monsters.jar';  // nombre con extensión
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

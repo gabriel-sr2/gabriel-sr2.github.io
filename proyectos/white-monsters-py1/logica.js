@@ -47,4 +47,14 @@ function descargarJar() {
     document.body.removeChild(link);
 }
 
+function descargarWord() {
+    const link = document.createElement('a');
+    link.href = 'Documentacion.docx';      // ruta relativa a index.html
+    link.download = 'Documentacion.docx';  // nombre del archivo
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
 
